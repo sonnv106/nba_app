@@ -29,12 +29,12 @@ const Stack = createNativeStackNavigator();
 export default RootNavigator = () => {
     return (
         <NavigationContainer>
-            <Stack.Navigator initialRouteName='App'>
-                <Stack.Screen name="TabStack" component={TabStack} options={{
-                    headerShown: true
-                }} />
+            <Stack.Navigator initialRouteName='Auth'>
                 <Stack.Screen name="Auth" component={SignIn} options={{
                     headerShown: false
+                }} />
+                <Stack.Screen name="TabStack" component={TabStack} options={{
+                    headerShown: true
                 }} />
             </Stack.Navigator>
         </NavigationContainer>
