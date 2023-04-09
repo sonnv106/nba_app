@@ -34,7 +34,7 @@ export default RootNavigator = () => {
                     headerShown: false
                 }} />
                 <Stack.Screen name="TabStack" component={TabStack} options={{
-                    headerShown: true
+                    headerShown: false
                 }} />
             </Stack.Navigator>
         </NavigationContainer>

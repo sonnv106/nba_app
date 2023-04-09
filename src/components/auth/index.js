@@ -13,6 +13,9 @@ export class AuthComponent extends Component {
   state = {
     loading: false,
   };
+  goNext = ()=>{
+    this.props.navigation.navigate('TabStack')
+  }
   render() {
     if (this.state.loading) {
       return (
@@ -27,7 +30,7 @@ export class AuthComponent extends Component {
           contentContainerStyle={styles.contentScrollView}>
           <View>
             <AuthLogo />
-            <AuthForm />
+            <AuthForm goNext = {this.goNext}/>
           </View>
         </ScrollView>
       );
