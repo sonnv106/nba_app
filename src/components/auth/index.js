@@ -9,6 +9,7 @@ import {
 } from 'react-native';
 import AuthForm from './authForm';
 import AuthLogo from './authLogo';
+import { strings } from '../../packages/strings';
 export class AuthComponent extends Component {
   state = {
     loading: false,

@@ -3,7 +3,7 @@ import React from 'react';
 
 const authLogo = () => {
   return (
-    <View>
+    <View style={{alignItems: 'center'}}>
       <Image
         source={require('../../assets/images/nba_login_logo.png')}
         style={{width: 170, height: 150,}}

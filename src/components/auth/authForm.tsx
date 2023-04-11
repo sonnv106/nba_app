@@ -1,6 +1,7 @@
 import {Text, StyleSheet, View, Button, Platform} from 'react-native';
 import React, {Component} from 'react';
 import Input from '../../utils/forms/input';
+import { strings } from '../../packages/strings';
 class AuthForm extends Component {
   state = {
     type: 'Login',
@@ -80,7 +81,7 @@ class AuthForm extends Component {
     return (
       <View>
         <Input
-          placeholder="Enter email"
+          placeholder={strings.enter_email}
           placeholderTextColor="#CECECE"
           type={this.state.form.email.type}
           value={this.state.form.email.value}
